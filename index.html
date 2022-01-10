@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-<!-- *** How and where container are used and what class can we use
+        <!-- *** How and where container are used and what class can we use
     to center a Container -->
         <!-- <div class=" container mx-auto bg-red-500">This is a div</div> -->
 
@@ -19,7 +19,7 @@
         <div class="h-10 w-80 bg-green-500">3</div>
     </div> -->
 
-<!-- *** How to shift an element to next line, also in reverse
+        <!-- *** How to shift an element to next line, also in reverse
          if it reaches it's maximum width  -->
         <!-- <div class="flex flex-wrap-reverse bg-yellow-500 w-auto">
             <div class="h-10 w-80 bg-red-500">1</div>
@@ -27,14 +27,14 @@
             <div class="h-10 w-80 bg-green-500">3</div>
         </div> -->
 
-<!-- *** How to grow and Shrink flex items  -->
+        <!-- *** How to grow and Shrink flex items  -->
         <!-- <div class="flex bg-yellow-500 w-auto">
             <div class="flex-initial h-10 w-80 bg-red-500">1</div>
             <div class="flex-initial h-10 w-80 bg-blue-500">2</div>
             <div class="flex-initial h-10 w-80 bg-green-500">3</div>
         </div> -->
         <!-- <div class="flex bg-yellow-500 w-auto">
-            <div class="flex-1 h-10 w-80 bg-red-500">1</div>
+            <div class="flex-1 h-10  bg-red-500 hover:basis-2/4">1</div>
             <div class="flex-1 h-10 w-80 bg-blue-500">2</div>
             <div class="flex-1 h-10 w-80 bg-green-500">3</div>
         </div> -->
@@ -69,7 +69,7 @@
             <div class="flex-shrink-0 h-10 w-80 bg-green-500">3</div>
         </div> -->
 
-<!-- *** How to change order of elements in which they will
+        <!-- *** How to change order of elements in which they will
 appear -->
         <!-- <div class="flex bg-yellow-500 w-auto">
             <div class="order-2 h-10 w-80 bg-red-500">1</div>
@@ -77,25 +77,170 @@ appear -->
             <div class="order-3 h-10 w-80 bg-green-500">3</div>
         </div> -->
 
+        <!-- Grid Layout -->
 
-                    <!-- Grid Layout -->
+        <!-- How to Create a Grid Layout -->
+        <!-- <div class="bg-green-500 w-auto grid grid-cols-3 gap-8">
+        <div class="h-20 bg-blue-500">1</div>
+        <div class="h-20 bg-blue-500">2</div>
+        <div class="h-20 bg-blue-500">3</div>
 
+        <div class="h-20 bg-blue-500">4</div>
+        <div class="h-20 bg-blue-500">5</div>
+        <div class="h-20 bg-blue-500">6</div>
 
-<!-- How to Create a Grid Row Layout -->
-    <div class="bg-yellow-500 w-auto grid grid-cols-3 gap-4">
-        <div class="col-span-2 h-20 bg-red-500">1</div>
-        <div class="h-20 bg-red-500">2</div>
-        <div class="h-20 bg-red-500">3</div>
+        <div class="h-20 bg-blue-500">7</div>
+        <div class="h-20 bg-blue-500">8</div>
+        <div class="h-20 bg-blue-500">9</div>
+    </div> -->
 
-        <div class="h-20 bg-red-500">4</div>
-        <div class="h-20 bg-red-500">5</div>
-        <div class="h-20 bg-red-500">6</div>
+        <!-- How to Create a Grid Row Layout -->
+        <!-- If we wanna have a grid row format but we want the 
+        rows in to be in column form then we need to have the 
+    grid-flow-col class, also the row-span-2 makes the first
+element span space of 2 rows but if it's width is not sufficient
+then the space might be cleared but the element will still cover
+area worth one row -->
+        <!-- <div class="bg-green-500 grid grid-cols-5 grid-flow-row gap-4">
+            <div class="h-20 bg-blue-500">1</div>
+            <div class="h-20 bg-blue-500">2</div>
+            <div class="h-20 bg-blue-500">3</div>
 
-        <div class="h-20 bg-red-500">7</div>
-        <div class="h-20 bg-red-500">8</div>
-        <div class="h-20 bg-red-500">9</div>
-    </div>
+            <div class="h-20 bg-blue-500">4</div>
+            <div class="h-20 bg-blue-500">5</div>
+            <div class="h-20 bg-blue-500">6</div>
 
-<!-- How to Create a Grid Row Layout -->
+            <div class="h-20 bg-blue-500">7</div>
+            <div class="h-20 bg-blue-500">8</div>
+            <div class="h-20 bg-blue-500">9</div>
+        </div> -->
+
+        <!-- How to add Gap in Columns and Row fashion -->
+        <!-- This adds Gap of 16px only in Containers in vertical direction -->
+        <!-- <div class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4">
+            <div class="h-20 bg-blue-500">1</div>
+            <div class="h-20 bg-blue-500">2</div>
+            <div class="h-20 bg-blue-500">3</div>
+
+            <div class="h-20 bg-blue-500">4</div>
+            <div class="h-20 bg-blue-500">5</div>
+            <div class="h-20 bg-blue-500">6</div>
+
+            <div class="h-20 bg-blue-500">7</div>
+            <div class="h-20 bg-blue-500">8</div>
+            <div class="h-20 bg-blue-500">9</div>
+        </div> -->
+
+        <!-- This adds gap in between containers in Horizontal Direction -->
+        <!-- <div class="bg-green-500 grid grid-cols-5 grid-flow-row gap-y-4">
+            <div class="h-20 bg-blue-500">1</div>
+            <div class="h-20 bg-blue-500">2</div>
+            <div class="h-20 bg-blue-500">3</div>
+
+            <div class="h-20 bg-blue-500">4</div>
+            <div class="h-20 bg-blue-500">5</div>
+            <div class="h-20 bg-blue-500">6</div>
+
+            <div class="h-20 bg-blue-500">7</div>
+            <div class="h-20 bg-blue-500">8</div>
+            <div class="h-20 bg-blue-500">9</div>
+        </div> -->
+        <!-- If you want to specify different gaps for horizontal and vertical axis 
+    then you can use both the Gap classes -->
+        <!-- <div class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4 gap-y-8">
+            <div class="h-20 bg-blue-500">1</div>
+            <div class="h-20 bg-blue-500">2</div>
+            <div class="h-20 bg-blue-500">3</div>
+
+            <div class="h-20 bg-blue-500">4</div>
+            <div class="h-20 bg-blue-500">5</div>
+            <div class="h-20 bg-blue-500">6</div>
+
+            <div class="h-20 bg-blue-500">7</div>
+            <div class="h-20 bg-blue-500">8</div>
+            <div class="h-20 bg-blue-500">9</div>
+        </div> -->
+        <!-- If you want to justify all the itms/containers from the end  -->
+        <!-- <div class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4 justify-items-end">
+            <div class="h-20 w-20 bg-blue-500">1</div>
+            <div class="h-20 w-20 bg-blue-500">2</div>
+            <div class="h-20 w-20 bg-blue-500">3</div>
+
+            <div class="h-20 w-20 bg-blue-500">4</div>
+            <div class="h-20 w-20 bg-blue-500">5</div>
+            <div class="h-20 w-20 bg-blue-500">6</div>
+
+            <div class="h-20 w-20 bg-blue-500">7</div>
+            <div class="h-20 w-20 bg-blue-500">8</div>
+            <div class="h-20 w-20 bg-blue-500">9</div>
+        </div> -->
+        <!-- If you want to justify items from left use
+        justify-items-start or justify-items-left -->
+        <!-- <div
+            class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4 justify-items-start"
+        >
+            <div class="h-20 w-20 bg-blue-500">1</div>
+            <div class="h-20 w-20 bg-blue-500">2</div>
+            <div class="h-20 w-20 bg-blue-500">3</div>
+
+            <div class="h-20 w-20 bg-blue-500">4</div>
+            <div class="h-20 w-20 bg-blue-500">5</div>
+            <div class="h-20 w-20 bg-blue-500">6</div>
+
+            <div class="h-20 w-20 bg-blue-500">7</div>
+            <div class="h-20 w-20 bg-blue-500">8</div>
+            <div class="h-20 w-20 bg-blue-500">9</div>
+        </div> -->
+
+        <!-- If you want to justofy items from center -->
+        <!-- <div
+            class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4  justify-items-center"
+        >
+            <div class="h-20 w-20 bg-blue-500">1</div>
+            <div class="h-20 w-20 bg-blue-500">2</div>
+            <div class="h-20 w-20 bg-blue-500">3</div>
+
+            <div class="h-20 w-20 bg-blue-500">4</div>
+            <div class="h-20 w-20 bg-blue-500">5</div>
+            <div class="h-20 w-20 bg-blue-500">6</div>
+
+            <div class="h-20 w-20 bg-blue-500">7</div>
+            <div class="h-20 w-20 bg-blue-500">8</div>
+            <div class="h-20 w-20 bg-blue-500">9</div>
+        </div> -->
+        <!-- If you wanna see that you items will retain the maximum soace
+        they can take then use this property as if you dont
+    mention width then justifying items make them thin -->
+        <!-- <div
+            class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4  gap-y-6 justify-items-stretch"
+        >
+            <div class="h-20 bg-blue-500">1</div>
+            <div class="h-20 bg-blue-500">2</div>
+            <div class="h-20 bg-blue-500">3</div>
+
+            <div class="h-20 bg-blue-500">4</div>
+            <div class="h-20 bg-blue-500">5</div>
+            <div class="h-20 bg-blue-500">6</div>
+
+            <div class="h-20 bg-blue-500">7</div>
+            <div class="h-20 bg-blue-500">8</div>
+            <div class="h-20 bg-blue-500">9</div>
+        </div> -->
+    <!-- How to Apply Gap to individual items -->
+        <div
+            class="bg-green-500 grid grid-cols-5 grid-flow-row gap-x-4   gap-y-4 justify-items-center"
+        >
+            <div class="h-20 w-20 bg-blue-500">1</div>
+            <div class="h-20 w-20 bg-blue-500">2</div>
+            <div class="h-20 w-20 bg-blue-500">3</div>
+
+            <div class="h-20 w-20 bg-blue-500">4</div>
+            <div class="h-20 w-20 bg-blue-500">5</div>
+            <div class="h-20 w-20 bg-blue-500">6</div>
+
+            <div class="h-20 w-20 bg-blue-500">7</div>
+            <div class="h-20 w-20 bg-blue-500">8</div>
+            <div class="h-20 w-20 bg-blue-500">9</div>
+        </div>
     </body>
 </html>
