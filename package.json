@@ -1,0 +1,25 @@
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "Here is me iterating and Completing my Journey with Tailwind CSS which as a record will be saved in this Public Repository and will be Drafted with Code and Documented with Commits which are meaningful and will be Understandable, Alsdo I am gonna Build out Two Mini PRojects with Tailwing at the end of this Course, A Landing Page and a Mini Admin Dashboard UI with Tailwind ... So stay tuned, it's gonna be fun ...",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamapurba2003/TailwindCSS.git"
+  },
+  "author": "iamapurba2003",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamapurba2003/TailwindCSS/issues"
+  },
+  "homepage": "https://github.com/iamapurba2003/TailwindCSS#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.13",
+    "vite": "^2.7.10"
+  }
+}
